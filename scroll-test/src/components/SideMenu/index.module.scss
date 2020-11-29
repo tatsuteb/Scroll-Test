@@ -1,8 +1,12 @@
 @import '../../variables.scss';
 
 .menu {
-  grid-column: 1;
   grid-row: 2;
+  grid-column: 1;
+
+  position: sticky;
+  top: $header-height;
   width: 350px;
+  height: calc(100vh - #{$header-height});
   background-color: $base-color;
 }

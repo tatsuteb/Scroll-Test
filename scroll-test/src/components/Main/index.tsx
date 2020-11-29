@@ -19,7 +19,7 @@ const Main = () => {
         </figure>
         <div className={styles['channel-name']}>CHANNEL NAME</div>
       </div>
-      <div style={{overflowY: 'scroll', height: 'calc(100% - 100px)'}}
+      <div
         onScroll={() => console.log('scroll1')}
         onWheel={() => console.log('wheel1')}
         onWheelCapture={() => console.log('wheel capture 1')}>
