@@ -1,0 +1,39 @@
+.main {
+  grid-column: 2;
+  grid-row: 2;
+  overflow: hidden;
+
+  .channel {
+    &-header {
+      display: flex;
+      padding: 20px;
+      height: 100px;
+      justify-content: flex-start;  
+      align-items: center;
+    }
+
+    &-logo {
+      display: flex;
+      width: 60px;
+      height: 60px;
+      background-color: lightgrey;
+      border-radius: 3px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-name {
+      margin-left: 10px;
+      color: grey;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+}

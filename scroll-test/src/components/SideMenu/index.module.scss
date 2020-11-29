@@ -1,0 +1,8 @@
+@import '../../variables.scss';
+
+.menu {
+  grid-column: 1;
+  grid-row: 2;
+  width: 350px;
+  background-color: $base-color;
+}
