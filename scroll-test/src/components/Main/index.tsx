@@ -9,23 +9,19 @@ const Main = () => {
   }
 
   return (
-    <main className={styles['main']}
-      onScroll={() => console.log('scroll2')}
-      onWheel={() => console.log('wheel2')}
-      onWheelCapture={() => console.log('wheel capture 2')}>
+    <main className={styles['main']}>
       <div className={styles['channel-header']}>
         <figure className={styles['channel-logo']}>
-          <img src="https://placehold.it/60" alt="channel name"/>
+          <img src='https://placehold.it/60' alt='channel name'/>
         </figure>
         <div className={styles['channel-name']}>CHANNEL NAME</div>
       </div>
-      <div
-        onScroll={() => console.log('scroll1')}
-        onWheel={() => console.log('wheel1')}
-        onWheelCapture={() => console.log('wheel capture 1')}>
+      
+      <div>
         <ul>
           {items.map(item =>
-            <li key={item}>{item}</li>)}
+            <li key={item}
+              style={{padding: '10px'}}>{item}</li>)}
         </ul>
       </div>
     </main>

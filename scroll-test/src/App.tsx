@@ -8,8 +8,12 @@ const App = () => {
   return (
     <div className={styles['app']}>
       <Header />
-      <SideMenu />
-      <Main />
+
+      <div className={styles['app-content']}>
+        <SideMenu />
+        <Main />
+      </div>
+      
     </div>
   );
 };

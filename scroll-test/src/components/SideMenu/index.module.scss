@@ -5,8 +5,14 @@
   grid-column: 1;
 
   position: sticky;
-  top: $header-height;
+  top: 0;
   width: 350px;
   height: calc(100vh - #{$header-height});
   background-color: $base-color;
+
+  &-item {
+    padding: 10px 5px;
+    width: 100%;
+    font-weight: bold;
+  }
 }

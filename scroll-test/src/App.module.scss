@@ -1,6 +1,15 @@
+@import './variables.scss';
+
 .app {
-  position: relative;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+
+  &-content {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    height: calc(100vh - #{$header-height});
+    overflow-y: scroll;
+  }
 }
